@@ -1,36 +1,22 @@
 package edu.escuelaing.arep.CalculadoraEstadistica.DataStructure;
 
-import java.math.BigDecimal;
+public class Node<E> {
+    private Node<E> Right;
+    private E data;
 
-public class Node {
-    private Node left;
-    private Node Right;
-    private BigDecimal data;
-    public void Node(BigDecimal data) {
+    public Node(E data) {
         this.data = data;
     }
-
-    public Node getLeft() {
-        return left;
-    }
-
-    public void setLeft(Node left) {
-        this.left = left;
-    }
-
-    public Node getRight() {
+    public Node<E> getRight() {
         return Right;
     }
-
-    public void setRight(Node right) {
+    public void setRight(Node<E> right) {
         Right = right;
     }
-
-    public BigDecimal getData() {
+    public E getData() {
         return data;
     }
-
-    public void setData(BigDecimal data) {
+    public void setData(E data) {
         this.data = data;
     }
 }
