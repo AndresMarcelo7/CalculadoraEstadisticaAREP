@@ -5,7 +5,7 @@ import edu.escuelaing.arep.CalculadoraEstadistica.DataStructure.LinkedList;
 import java.math.BigDecimal;
 
 /**
- * Hello world!
+ * Main Application, Reader 
  *
  */
 public class App
@@ -18,8 +18,10 @@ public class App
         linkedList.add(new BigDecimal("0.33"));
         linkedList.add(new BigDecimal("0.35"));
         linkedList.add(new BigDecimal("0.36"));
-        for(Object i: linkedList){
-            System.out.println(i);
+
+        for(BigDecimal i: linkedList){
+            System.out.println(linkedList.remove());
+
         }
 
     }
