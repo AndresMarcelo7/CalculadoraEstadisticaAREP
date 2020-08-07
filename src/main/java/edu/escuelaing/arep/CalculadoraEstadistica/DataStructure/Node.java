@@ -1,36 +1,56 @@
 package edu.escuelaing.arep.CalculadoraEstadistica.DataStructure;
 
-import java.math.BigDecimal;
+/**
+ * The type Node, Used as element of a LinkedList.
+ *
+ * @param <E> the type parameter
+ */
+public class Node<E> {
+    private Node<E> Right;
+    private E data;
 
-public class Node {
-    private Node left;
-    private Node Right;
-    private BigDecimal data;
-    public void Node(BigDecimal data) {
+    /**
+     * Instantiates a new Node.
+     *
+     * @param data the data
+     */
+    public Node(E data) {
         this.data = data;
     }
 
-    public Node getLeft() {
-        return left;
-    }
-
-    public void setLeft(Node left) {
-        this.left = left;
-    }
-
-    public Node getRight() {
+    /**
+     * Gets the right Node.
+     *
+     * @return the right
+     */
+    public Node<E> getRight() {
         return Right;
     }
 
-    public void setRight(Node right) {
+    /**
+     * Sets the right node.
+     *
+     * @param right the right
+     */
+    public void setRight(Node<E> right) {
         Right = right;
     }
 
-    public BigDecimal getData() {
+    /**
+     * Gets the data of the current node.
+     *
+     * @return the data of the node
+     */
+    public E getData() {
         return data;
     }
 
-    public void setData(BigDecimal data) {
+    /**
+     * Sets the data of the node.
+     *
+     * @param data the data to be inserted
+     */
+    public void setData(E data) {
         this.data = data;
     }
 }
