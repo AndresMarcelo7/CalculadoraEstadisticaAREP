@@ -7,9 +7,37 @@ import org.junit.Before;
 import org.junit.Test;
 
 
+/**
+ *  Test Class for the Calculator App.
+ */
 public class AppTest {
+    /**
+     * The Calculator to Use.
+     */
     Calculator calculator;
-    LinkedList<Double> dataSet1,dataSet2,dataSet3,dataSet4,dataSet5,dataSet6;
+    /**
+     * The Data set 1.
+     */
+    LinkedList<Double> dataSet1, /**
+     * The Data set 2.
+     */
+    dataSet2, /**
+     * The Data set 3.
+     */
+    dataSet3, /**
+     * The Data set 4.
+     */
+    dataSet4, /**
+     * The Data set 5.
+     */
+    dataSet5, /**
+     * The Data set 6.
+     */
+    dataSet6;
+
+    /**
+     * SetUp of the test, Fill up of the data structures.
+     */
     @Before
     public void setup(){
         calculator = new Calculator();
@@ -21,6 +49,10 @@ public class AppTest {
         dataSet6 = createLinkedList(new double[]{25.2547,27.0088,55.1112,8.6243,79.3423,78.2012,97.1161,37.4080,7.5995,94.5614,26.3058,12.3282,49.3001,25.1194,92.0442});
 
     }
+
+    /**
+     * Should calculate mean of the data sets.
+     */
     @Test
     public void shouldCalculateMean() {
         Assert.assertEquals(36.99, calculator.mean(dataSet1), 0.01);
@@ -31,6 +63,9 @@ public class AppTest {
         Assert.assertEquals(47.68, calculator.mean(dataSet6), 0.01);
     }
 
+    /**
+     * Should calculate Standard Deviation of the data Sets.
+     */
     @Test
     public void shouldCalculateSD() {
         Assert.assertEquals(25.44, calculator.standardDeviation(dataSet1), 0.01);
@@ -41,6 +76,9 @@ public class AppTest {
         Assert.assertEquals(32.71, calculator.standardDeviation(dataSet6), 0.01);
     }
 
+    /**
+     * Should not calculate mean of the dataStructures.
+     */
     @Test
     public void shouldNotCalculateMean() {
         Assert.assertNotEquals(321.21, calculator.mean(dataSet1), 0.01);
@@ -51,8 +89,11 @@ public class AppTest {
         Assert.assertNotEquals(4.02, calculator.mean(dataSet6), 0.01);
     }
 
+    /**
+     * Should not calculate standard deviation of the dataSets.
+     */
     @Test
-    public void shouldNotCalculateStandardDeviation(){
+    public void shouldNotCalculateSD(){
         Assert.assertNotEquals(7.03, calculator.standardDeviation(dataSet1), 0.05);
         Assert.assertNotEquals(61.26, calculator.standardDeviation(dataSet2), 0.03);
         Assert.assertNotEquals(81.96, calculator.standardDeviation(dataSet3), 0.01);
@@ -61,7 +102,11 @@ public class AppTest {
         Assert.assertNotEquals(33.08, calculator.standardDeviation(dataSet6), 0.01);
     }
 
-
+    /**
+     * Auxiliary method to fill the linked List for the tests.
+     * @param doubles
+     * @return a linked list with all the elements of an array.
+     */
     private LinkedList<Double> createLinkedList(double[] doubles){
         LinkedList<Double> ll = new LinkedList<Double>();
         for(double i: doubles){
