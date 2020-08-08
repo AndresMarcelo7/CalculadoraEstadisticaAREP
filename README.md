@@ -1,6 +1,6 @@
 # Statistic Calculator AREP 
 
-A Solution for AREP Workshop "Introduction to complex systems, JAVA,MVN and GIT" using Linked Lists
+A Solution for AREP Workshop "Introduction to complex systems, JAVA,MVN and GIT" using Linked Lists.
 
 ## Getting Started
 
