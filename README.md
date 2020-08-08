@@ -1,6 +1,6 @@
 # Statistic Calculator AREP 
 
-A Solution for AREP Workshop "Introduction to complex systems, JAVA,MVN and GIT" using Linked Lists.
+A Solution for AREP Workshop "Introduction to complex systems, JAVA,MVN and GIT" using Linked Lists
 
 ## Getting Started
 
@@ -53,6 +53,7 @@ C:\Users\User > mvn test
 
 For running the project with some Data in the project please run the following command:
 
+
 ```
 C:\Users\User\CalculadoraEstadisticaAREP > java -cp target/Calculadora-1.0-SNAPSHOT.jar edu.escuelaing.arep.CalculadoraEstadistica.App
 ```
@@ -65,6 +66,20 @@ If you want to put your own test cases on the calculator, follow this instructio
 - Put your values in that file, one line per case and each value separated by ","
 - Save the file 
 - Run the program again. 
+
+## JavaDoc
+If you want to see the project Documentation, follow this instructions:
+- On the project directory run the following commands:
+```
+C:\Users\User\CalculadoraEstadisticaAREP > mvn javadoc:javadoc
+```
+```
+C:\Users\User\CalculadoraEstadisticaAREP > mvn site
+```
+```
+C:\Users\User\CalculadoraEstadisticaAREP > mvn site:run
+```
+This last commands will open the 8080 port in order to post the Javadoc file on your browser with the localhost URL http://localhost:8080 
 
 
 ## Built With
