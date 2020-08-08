@@ -68,7 +68,9 @@ If you want to put your own test cases on the calculator, follow this instructio
 - Run the program again. 
 
 ## JavaDoc
-If you want to see the project Documentation, follow this instructions:
+If you want to see the Project Documentation Please click [here](https://andresmarcelo7.github.io/CalculadoraEstadisticaAREP/)
+
+If you want to run with maven the project Documentation, follow this instructions:
 - On the project directory run the following commands:
 ```
 C:\Users\User\CalculadoraEstadisticaAREP > mvn javadoc:javadoc
@@ -87,7 +89,8 @@ This last commands will open the 8080 port in order to post the Javadoc file on 
 * [Maven](https://maven.apache.org/) - Dependency Management
 * CircleCI for Continous Integration  
 [![CircleCI](https://circleci.com/gh/AndresMarcelo7/CalculadoraEstadisticaAREP.svg?style=svg)](https://circleci.com/gh/AndresMarcelo7/CalculadoraEstadisticaAREP)
-
+* Git - Version Control  
+ 
 ## Versioning
 
  For the versions available, see the [tags on this repository](https://github.com/AndresMarcelo7/CalculadoraEstadisticaAREP/tags). 
