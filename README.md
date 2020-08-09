@@ -48,6 +48,9 @@ if you want to run the tests again please run the following command:
 ```
 C:\Users\User > mvn test
 ```
+## Test Coverage
+
+![Coverage](/img/testcov.jpg)
 
 ## Run
 
@@ -67,7 +70,7 @@ If you want to put your own test cases on the calculator, follow this instructio
 - Save the file 
 - Run the program again. 
 
-## JavaDoc
+## Documentation
 If you want to see the Project Documentation Please click [here](https://andresmarcelo7.github.io/CalculadoraEstadisticaAREP/)
 
 If you want to run with maven the project Documentation, follow this instructions:
@@ -81,8 +84,9 @@ C:\Users\User\CalculadoraEstadisticaAREP > mvn site
 ```
 C:\Users\User\CalculadoraEstadisticaAREP > mvn site:run
 ```
-This last commands will open the 8080 port in order to post the Javadoc file on your browser with the localhost URL http://localhost:8080 
+This last commands will open the 8080 port in order to post the Javadoc file on your browser with the localhost URL http://localhost:8080  
 
+Also you will find a [Documentation.pdf file](/Documentacion.pdf)  that describes the design and structures of the project 
 
 ## Built With
 

@@ -8,7 +8,7 @@ import org.junit.Test;
 
 
 /**
- *  Test Class for the Calculator App.
+ * Test Class for the Calculator App.
  */
 public class AppTest {
     /**
@@ -18,19 +18,24 @@ public class AppTest {
     /**
      * The Data set 1.
      */
-    LinkedList<Double> dataSet1, /**
+    LinkedList<Double> dataSet1,
+    /**
      * The Data set 2.
      */
-    dataSet2, /**
+    dataSet2,
+    /**
      * The Data set 3.
      */
-    dataSet3, /**
+    dataSet3,
+    /**
      * The Data set 4.
      */
-    dataSet4, /**
+    dataSet4,
+    /**
      * The Data set 5.
      */
-    dataSet5, /**
+    dataSet5,
+    /**
      * The Data set 6.
      */
     dataSet6;
@@ -101,6 +106,51 @@ public class AppTest {
         Assert.assertNotEquals(20.66, calculator.standardDeviation(dataSet5), 0.01);
         Assert.assertNotEquals(33.08, calculator.standardDeviation(dataSet6), 0.01);
     }
+
+
+    /**
+     * Should add nodes to a linked list.
+     */
+    @Test
+    public void shouldAddNodes(){
+        double[] values = {1.02,23.12,56.11,132.11,23.344,99.13,13.321,3213.1,10.10,11.133};
+        LinkedList<Double> linkedListTest = createLinkedList(values);
+        Assert.assertEquals(10,linkedListTest.size());
+    }
+
+    /**
+     * Should remove nodes from a linked list.
+     */
+    @Test
+    public void shouldRemoveNodes() {
+        double[] values = {1.02,23.12,56.11,132.11,23.344,99.13,13.321,3213.1,10.10,11.133};
+        LinkedList<Double> linkedListTest = createLinkedList(values);
+        linkedListTest.add(1.01);
+        linkedListTest.add(1.02);
+        linkedListTest.add(1.03);
+        linkedListTest.add(1.04);
+        linkedListTest.add(1.05);
+        linkedListTest.add(1.06);
+        linkedListTest.remove();
+        linkedListTest.remove();
+        Assert.assertEquals(14,linkedListTest.size());
+    }
+
+    /**
+     * Should run the main app with the initial data.
+     */
+    @Test
+    public void shouldRunMainApp(){
+        try{
+            String[] a = new String[1];
+           App.main(a);
+        }
+        catch(Exception e){
+            e.fillInStackTrace();
+        }
+    }
+
+
 
     /**
      * Auxiliary method to fill the linked List for the tests.
