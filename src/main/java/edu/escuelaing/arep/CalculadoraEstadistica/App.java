@@ -47,6 +47,5 @@ public class App
             ll.add(d);
         }
         System.out.println("Mean: " + cal.mean(ll) + " SD: " + cal.standardDeviation(ll));
-
     }
 }
